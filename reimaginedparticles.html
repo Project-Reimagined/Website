@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ReimaginedParticles — custom server-side particle effects for Minecraft.">
+  <title>ReimaginedParticles — Project Reimagined</title><link rel="stylesheet" href="styles.css">
+</head>
+<body class="particles-page"><div class="site">
+  <header><a class="brand" href="index.html"><b>PR</b><span>Project Reimagined</span></a><nav><a href="index.html">All projects</a><a href="https://modrinth.com/organization/reimagined" target="_blank" rel="noreferrer">Modrinth ↗</a></nav></header>
+  <main>
+    <section class="detail-hero"><a class="back" href="index.html">← Back to projects</a><p class="eyebrow">Available now · Paper / Purpur / Spigot</p><h1>Reimagined<em>Particles</em></h1><p class="intro">Design custom particle effects in your browser, then place them in-game with one command. No client mod, schematic, or datapack required.</p><a class="button" href="https://modrinth.com/plugin/reimaginedparticles" target="_blank" rel="noreferrer">View on Modrinth ↗</a></section>
+    <section class="detail-content">
+      <div><h2>Make your world move.</h2><div class="detail-copy"><p>Build a shape at <a href="https://reimaginedparticles.my.to/" target="_blank" rel="noreferrer"><u>reimaginedparticles.my.to</u></a>, save it, and import the eight-character code with <code>/rp import &lt;code&gt;</code>.</p><p>Particles are culled by distance and field of view, so effects stay beautiful without broadcasting unnecessary data to every player.</p></div></div>
+      <div><ul class="feature-list"><li><strong>Browser designer</strong><span>Shape, color, density, surfaces, and edges.</span></li><li><strong>Server-side</strong><span>Vanilla clients can see the effects.</span></li><li><strong>Persistent</strong><span>Active effects reload after a restart.</span></li><li><strong>Admin controls</strong><span>Set limits for points and active effects.</span></li></ul><div class="side-box" style="margin-top:25px"><h3>Requirements</h3><p>Minecraft 26.1+ · Paper, Purpur, or Spigot</p><a class="button secondary" href="https://reimaginedparticles.my.to/" target="_blank" rel="noreferrer">Open particle designer ↗</a></div></div>
+    </section>
+    <section class="detail-sections">
+      <h2>What it does</h2>
+      <h3>Particle Designer on the web</h3>
+      <p>Design custom particle shapes at <a href="https://reimaginedparticles.my.to/" target="_blank" rel="noreferrer"><u>reimaginedparticles.my.to</u></a> by setting shape size, number of points, surface or edges-only rendering, and color. No login or download is required.</p>
+      <h3>Import codes</h3>
+      <p>Saving a design generates an eight-character code. Use it in-game and your shape appears where you stand.</p>
+      <div class="command">/rp import HR4SJC3S</div>
+      <h3>Commands</h3>
+      <ul>
+        <li><code>/rp import &lt;code&gt;</code> downloads a saved design and spawns it at your location. Requires <code>reimagined.admin</code>.</li>
+        <li><code>/rp remove &lt;id|hash|all&gt;</code> deletes an effect by short ID, long hash, or all at once. Requires <code>reimagined.admin</code>.</li>
+        <li><code>/rp list</code> lists active effects with their ID, type, and point count. Requires <code>reimagined.use</code>.</li>
+        <li><code>/rp info &lt;id|hash&gt;</code> shows an effect's ID, color, points, and location. Requires <code>reimagined.use</code>.</li>
+        <li><code>/rp identify</code> shows floating effect IDs visible only to you. Requires <code>reimagined.admin</code>.</li>
+        <li><code>/rp fov &lt;value|reset&gt;</code> adjusts the visibility angle to your actual FOV.</li>
+        <li><code>/rp reload</code> reloads the config without restarting the server. Requires <code>reimagined.admin</code>.</li>
+      </ul>
+      <h3>Website workflow</h3>
+      <p>Open the designer, adjust dimensions, point density, surface or edges mode, and color, then preview the points before entering the game. Press Save to get an import code and use it with the plugin. Shape data is created client-side and stored in a tiny shared database, so no account is needed and shapes can be viewed on any server using the plugin.</p>
+      <h3>Visibility and safety</h3>
+      <p>Particles are sent only to players looking toward them and within range. Turn away and they stop rendering, reducing network bandwidth and server load. Per-player FOV settings keep culling accurate, while configurable limits control points per effect and total active effects.</p>
+      <h3>Requirements</h3>
+      <p>Minecraft 26.1 or higher · Paper, Purpur, or Spigot. This is a server-side plugin: vanilla clients can connect and see the particles, with no client mod or resource pack. Active particles are stored on disk and reload after restarts.</p>
+    </section>
+  </main>
+  <footer><span>© 2026 Project Reimagined</span><a href="https://modrinth.com/organization/reimagined" target="_blank" rel="noreferrer">Modrinth ↗</a></footer>
+</div></body></html>

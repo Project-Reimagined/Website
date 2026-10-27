@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ReimaginedFriends — shared Minecraft worlds for friends, even when the host is offline.">
+  <title>ReimaginedFriends — Project Reimagined</title><link rel="stylesheet" href="styles.css">
+</head>
+<body class="friends-page"><div class="site">
+  <header><a class="brand" href="index.html"><b>PR</b><span>Project Reimagined</span></a><nav><a href="index.html">All projects</a><a href="https://modrinth.com/organization/reimagined" target="_blank" rel="noreferrer">Modrinth ↗</a></nav></header>
+  <main>
+    <section class="detail-hero"><a class="back" href="index.html">← Back to projects</a><p class="eyebrow">In beta · Fabric / Quilt / NeoForge</p><h1>Reimagined<em>Friends</em></h1><p class="intro">Play on your shared Minecraft worlds anytime, even when the host is offline — without paying for a server or Realm.</p><div class="download-grid"><a class="button" href="https://cdn.modrinth.com/data/2cpRxoN6/versions/YYRez3yT/reimaginedfriends-fabric-0.6.0.jar">Download Fabric / Quilt ↓</a><a class="button" href="https://cdn.modrinth.com/data/2cpRxoN6/versions/v4p9CnTg/reimaginedfriends-neoforge-0.6.0.jar">Download NeoForge ↓</a></div></section>
+    <section class="detail-content">
+      <div><h2>Shared worlds, less waiting.</h2><div class="detail-copy"><p>ReimaginedFriends brings live co-op and asynchronous world sharing together. Pass a world between friends, or host it live from the pause menu.</p><p>When a session ends, only the changes are synced — not the entire world. It is free, flexible, and built for groups.</p></div></div>
+      <div><ul class="feature-list"><li><strong>Shared mode</strong><span>Continue a world while its owner is offline.</span></li><li><strong>Hosted mode</strong><span>Join live co-op without a server setup.</span></li><li><strong>Direct connections</strong><span>UPnP, NAT hole punching, and relay fallback.</span></li><li><strong>Safe by default</strong><span>Automatic backups help protect your world.</span></li></ul><div class="side-box" style="margin-top:25px"><h3>Requirements</h3><p>Minecraft Java Edition · Fabric API on Fabric · Account sign-in</p><p>Beta software. Your feedback helps shape the release.</p></div></div>
+    </section>
+    <section class="detail-sections">
+      <h2>How it works</h2>
+      <h3>Shared Mode — asynchronous world sync</h3>
+      <p>Play on a shared world even if the initial owner is offline. When the session ends, ReimaginedFriends calculates and sends only the world delta — the changes made — resulting in a much faster sync than uploading the entire world.</p>
+      <h3>Hosted Mode — live co-op</h3>
+      <p>Host your singleplayer world directly from the pause menu. Friends can join live co-op sessions through the ReimaginedFriends in-game menu without a complicated setup process.</p>
+      <h3>Under the hood</h3>
+      <ul><li>Direct peer-to-peer connections using UPnP or NAT hole punching.</li><li>A global relay network provides a fallback when a direct connection fails.</li><li>Only one player can host a shared world at a time, preventing forks and desynchronization.</li></ul>
+      <h3>How it compares</h3>
+      <p>ReimaginedFriends supports live co-op like Essential, e4mc, and Realms, but also supports asynchronous play when the host is offline. It is free, needs no 24/7 server setup, and has full API access in development. Simple Voice Chat support is currently in beta.</p>
+      <h3>For modpack creators</h3>
+      <p>You are 100% allowed to use ReimaginedFriends in any Modrinth modpack. A full API and custom interface are in development for the v1.0 release or earlier, allowing modpack creators to hide the built-in buttons and use a custom menu instead.</p>
+      <h3>Beta notice, safety, and privacy</h3>
+      <p>This is beta software and feedback is welcome. If the host crashes during a live match, Minecraft automatically makes a backup copy of the world data. ReimaginedFriends uses online services for logging in, delta storage, and connecting friends. Connections are made only after you accept the prompt in-game. Read the <a href="https://fynn.qzz.io/RF/PRIVACY.md" target="_blank" rel="noreferrer"><u>privacy policy</u></a> for more information.</p>
+    </section>
+  </main>
+  <footer><span>© 2026 Project Reimagined</span><a href="https://modrinth.com/organization/reimagined" target="_blank" rel="noreferrer">Modrinth ↗</a></footer>
+</div></body></html>
